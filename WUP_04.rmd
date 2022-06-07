@@ -43,9 +43,17 @@ basicCN + geom_boxplot()
 ```
 
 The graph shows the difference in wordsum test scores between grade level.If you were to move the high school box it would not hit the graduate box and that is a visual for the large difference they have with one another. The lt high school box would not hit the junior college box either showing the difference between the two.
+
+
 ### Numerical Descriptive Results.
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+```{r}
+favstats(WORDSUM~DEGREE,data=GSScsv)
+```
+
+The mean of Lt high school is 7.75 where graduate students have a mean of 10.09 and the high school students with a mean of 8.28, shows that the box will not hit each other mostly likely giving up an extremely small chance for intersection between these five groups. 
 
 ## Inferential Results
 
